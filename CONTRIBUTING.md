@@ -232,7 +232,9 @@ playsafe-wallet/
 │   ├── i18n/           # Traduções
 │   └── assets/         # Imagens e recursos
 ├── public/             # Arquivos públicos
-├── manifest.json       # Configuração da extensão
+│   ├── manifest.json   # Configuração da extensão
+│   ├── background.js   # Service worker
+│   └── content.js      # Content script
 └── package.json        # Dependências
 ```
 

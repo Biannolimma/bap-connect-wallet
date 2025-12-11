@@ -45,9 +45,9 @@ Este PR implementa com sucesso a estrutura inicial da extensão BAP Connect Wall
 
 ### 3. Configuração da Extensão
 
-- ✅ **manifest.json**: Manifest V3 para Chrome/Edge
-- ✅ **background.js**: Service worker para tarefas em background
-- ✅ **content.js**: Script de conteúdo para integração com dApps
+- ✅ **public/manifest.json**: Manifest V3 para Chrome/Edge
+- ✅ **public/background.js**: Service worker para tarefas em background
+- ✅ **public/content.js**: Script de conteúdo para integração com dApps
 - ✅ **popup.html**: Interface popup da extensão
 - ✅ **index.html**: Página principal para desenvolvimento
 

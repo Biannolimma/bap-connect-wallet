@@ -2,7 +2,7 @@
   "name": "playsafe-wallet",
   "version": "0.1.0",
   "description": "PlaySafe - Carteira digital segura e fácil de usar para tokens BAP/NFX",
-  "main": "src/index.js",
+  "main": "src/index.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

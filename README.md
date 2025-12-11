@@ -87,7 +87,9 @@ playsafe-wallet/
 │   ├── utils/             # Funções utilitárias
 │   └── styles/            # Arquivos de estilo CSS/SCSS
 ├── public/                # Arquivos públicos
-├── manifest.json          # Configuração da extensão
+│   ├── manifest.json      # Configuração da extensão
+│   ├── background.js      # Service worker
+│   └── content.js         # Content script
 ├── package.json           # Dependências do projeto
 └── README.md             # Este arquivo
 ```
