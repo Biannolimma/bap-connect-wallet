@@ -22,7 +22,7 @@ Este projeto adota um Código de Conduta baseado em respeito mútuo e colaboraç
 
 ```bash
 # Fork o repositório no GitHub
-# Clone seu fork
+# Clone seu fork (mantém o nome original do repositório por compatibilidade)
 git clone https://github.com/SEU-USUARIO/bap-connect-wallet.git
 cd bap-connect-wallet
 

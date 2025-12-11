@@ -1,8 +1,8 @@
-# Sumário de Implementação - BAP Connect Wallet
+# Sumário de Implementação - PlaySafe
 
 ## ✅ Implementação Completa
 
-Este PR implementa com sucesso a estrutura inicial da extensão BAP Connect Wallet para o ecossistema Block And Play (BAP/NFX).
+Este PR implementa com sucesso a estrutura inicial da extensão PlaySafe para o ecossistema Block And Play (BAP/NFX).
 
 ## 📦 Conteúdo Entregue
 

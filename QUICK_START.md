@@ -7,7 +7,7 @@ Este guia fornece instruções rápidas para começar a desenvolver o PlaySafe.
 ### 1. Clone e Instale
 
 \`\`\`bash
-# Clone o repositório
+# Clone o repositório (mantém nome original por compatibilidade)
 git clone https://github.com/Biannolimma/bap-connect-wallet.git
 cd bap-connect-wallet
 

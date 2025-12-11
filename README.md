@@ -46,6 +46,7 @@ O projeto está estruturado com os seguintes componentes:
 
 ```bash
 # Clone o repositório
+# Nota: O repositório mantém o nome original por compatibilidade
 git clone https://github.com/Biannolimma/bap-connect-wallet.git
 
 # Entre no diretório
