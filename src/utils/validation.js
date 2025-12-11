@@ -21,11 +21,23 @@ export const isValidAddress = (address) => {
     return false;
   }
 
-  // Check if it's a valid hex string (basic check)
+  // Check if it's a valid hex string (require at least one character after optional 0x)
   const hexRegex = /^(0x)?[0-9a-fA-F]+$/;
   if (!hexRegex.test(address)) {
     return false;
   }
+
+  // Remove '0x' prefix if present for further validation
+  const cleanAddress = address.toLowerCase().replace(/^0x/, '');
+  
+  // Ensure it's not just '0x' or empty after removing prefix
+  if (cleanAddress.length === 0) {
+    return false;
+  }
+
+  // TODO: Implement BAP-specific address format validation
+  // TODO: Add checksum validation (e.g., EIP-55 style or BAP-specific)
+  // Example: verify checksum by comparing mixed-case address
 
   return true;
 };

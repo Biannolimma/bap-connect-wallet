@@ -20,6 +20,21 @@ const Send = ({ tokens, balance, onSend, i18n }) => {
     // Basic validation - should be enhanced with actual BAP address validation
     if (!address) return false;
     if (address.length < 20) return false;
+    
+    // Check for valid hex format
+    const hexRegex = /^(0x)?[0-9a-fA-F]+$/;
+    if (!hexRegex.test(address)) return false;
+    
+    // Remove '0x' prefix if present
+    const cleanAddress = address.toLowerCase().replace(/^0x/, '');
+    
+    // Ensure proper length (40 characters for Ethereum-style, adjust for BAP)
+    // TODO: Implement BAP-specific address length and format requirements
+    if (cleanAddress.length !== 40 && cleanAddress.length !== 64) return false;
+    
+    // TODO: Implement checksum validation for BAP addresses
+    // TODO: Verify address is not a known malicious address
+    
     return true;
   };
 

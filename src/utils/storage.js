@@ -15,8 +15,14 @@ const ENCRYPTED_KEYS = ['privateKey', 'mnemonic', 'password'];
  */
 const simpleEncrypt = (data, key = 'bap-default-key') => {
   // This is a PLACEHOLDER - implement proper encryption in production!
-  // Use Web Crypto API: crypto.subtle.encrypt()
-  return btoa(data + key);
+  // TODO: Use Web Crypto API: crypto.subtle.encrypt() with AES-GCM
+  // Example: const encrypted = await crypto.subtle.encrypt(
+  //   { name: "AES-GCM", iv: iv },
+  //   cryptoKey,
+  //   encoder.encode(data)
+  // );
+  // WARNING: This is NOT secure - only for development/demo purposes
+  return btoa(JSON.stringify({ data, timestamp: Date.now() }));
 };
 
 /**
@@ -27,10 +33,17 @@ const simpleEncrypt = (data, key = 'bap-default-key') => {
  */
 const simpleDecrypt = (encryptedData, key = 'bap-default-key') => {
   // This is a PLACEHOLDER - implement proper decryption in production!
-  // Use Web Crypto API: crypto.subtle.decrypt()
+  // TODO: Use Web Crypto API: crypto.subtle.decrypt() with AES-GCM
+  // Example: const decrypted = await crypto.subtle.decrypt(
+  //   { name: "AES-GCM", iv: iv },
+  //   cryptoKey,
+  //   encryptedData
+  // );
+  // WARNING: This is NOT secure - only for development/demo purposes
   try {
     const decoded = atob(encryptedData);
-    return decoded.replace(key, '');
+    const parsed = JSON.parse(decoded);
+    return parsed.data;
   } catch {
     return null;
   }

@@ -120,11 +120,11 @@ window.addEventListener('message', (event) => {
   
   // Forward to background script
   chrome.runtime.sendMessage({ type, data }, (response) => {
-    // Send response back to page
+    // Send response back to page with proper origin restriction
     window.postMessage({
       type: type.replace('REQUEST', 'RESPONSE'),
       ...response
-    }, '*');
+    }, window.location.origin);
   });
 });
 

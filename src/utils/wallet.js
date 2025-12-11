@@ -10,12 +10,20 @@
  */
 export const generateWalletAddress = () => {
   // This is a placeholder - use proper key generation in production
-  const chars = '0123456789abcdef';
-  let address = '0x';
-  for (let i = 0; i < 40; i++) {
-    address += chars[Math.floor(Math.random() * chars.length)];
+  // TODO: Use crypto.getRandomValues() and proper key derivation
+  // Example: const privateKey = crypto.getRandomValues(new Uint8Array(32));
+  // Then derive address from public key using BAP-specific algorithm
+  // WARNING: This is NOT secure - only for development/demo purposes
+  const array = new Uint8Array(20);
+  if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
+    crypto.getRandomValues(array);
+  } else {
+    // Fallback for environments without crypto API (not secure)
+    for (let i = 0; i < array.length; i++) {
+      array[i] = Math.floor(Math.random() * 256);
+    }
   }
-  return address;
+  return '0x' + Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
 };
 
 /**
@@ -119,9 +127,17 @@ export const clearWalletData = () => {
  * @returns {string} Transaction ID
  */
 export const generateTransactionId = () => {
-  return '0x' + Array.from({ length: 64 }, () => 
-    Math.floor(Math.random() * 16).toString(16)
-  ).join('');
+  // Use cryptographically secure random values
+  const array = new Uint8Array(32);
+  if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
+    crypto.getRandomValues(array);
+  } else {
+    // Fallback for environments without crypto API (not secure)
+    for (let i = 0; i < array.length; i++) {
+      array[i] = Math.floor(Math.random() * 256);
+    }
+  }
+  return '0x' + Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
 };
 
 /**
