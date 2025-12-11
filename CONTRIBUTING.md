@@ -1,6 +1,6 @@
-# Guia de Contribuição - BAP Connect Wallet
+# Guia de Contribuição - PlaySafe
 
-Obrigado por considerar contribuir com o BAP Connect Wallet! Este documento fornece diretrizes para contribuir com o projeto.
+Obrigado por considerar contribuir com o PlaySafe! Este documento fornece diretrizes para contribuir com o projeto.
 
 ## 📋 Sumário
 
@@ -22,7 +22,7 @@ Este projeto adota um Código de Conduta baseado em respeito mútuo e colaboraç
 
 ```bash
 # Fork o repositório no GitHub
-# Clone seu fork
+# Clone seu fork (mantém o nome original do repositório por compatibilidade)
 git clone https://github.com/SEU-USUARIO/bap-connect-wallet.git
 cd bap-connect-wallet
 
@@ -224,7 +224,7 @@ Use conventional commits:
 ## 📁 Estrutura do Projeto
 
 ```
-bap-connect-wallet/
+playsafe-wallet/
 ├── src/
 │   ├── components/      # Componentes React
 │   ├── utils/          # Funções utilitárias
@@ -232,7 +232,9 @@ bap-connect-wallet/
 │   ├── i18n/           # Traduções
 │   └── assets/         # Imagens e recursos
 ├── public/             # Arquivos públicos
-├── manifest.json       # Configuração da extensão
+│   ├── manifest.json   # Configuração da extensão
+│   ├── background.js   # Service worker
+│   └── content.js      # Content script
 └── package.json        # Dependências
 ```
 
@@ -261,9 +263,9 @@ npm run build
 ## 💬 Precisa de Ajuda?
 
 - Abra uma issue com a tag `question`
-- Entre em contato com a equipe BAP
+- Entre em contato com a equipe PlaySafe
 - Consulte a documentação
 
 ## 🙏 Reconhecimento
 
-Todas as contribuições são valorizadas e reconhecidas! Obrigado por tornar o BAP Connect Wallet melhor.
+Todas as contribuições são valorizadas e reconhecidas! Obrigado por tornar o PlaySafe melhor.

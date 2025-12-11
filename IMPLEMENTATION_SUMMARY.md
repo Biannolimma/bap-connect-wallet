@@ -1,8 +1,8 @@
-# Sumário de Implementação - BAP Connect Wallet
+# Sumário de Implementação - PlaySafe
 
 ## ✅ Implementação Completa
 
-Este PR implementa com sucesso a estrutura inicial da extensão BAP Connect Wallet para o ecossistema Block And Play (BAP/NFX).
+Este PR implementa com sucesso a estrutura inicial da extensão PlaySafe para o ecossistema Block And Play (BAP/NFX).
 
 ## 📦 Conteúdo Entregue
 
@@ -45,9 +45,9 @@ Este PR implementa com sucesso a estrutura inicial da extensão BAP Connect Wall
 
 ### 3. Configuração da Extensão
 
-- ✅ **manifest.json**: Manifest V3 para Chrome/Edge
-- ✅ **background.js**: Service worker para tarefas em background
-- ✅ **content.js**: Script de conteúdo para integração com dApps
+- ✅ **public/manifest.json**: Manifest V3 para Chrome/Edge
+- ✅ **public/background.js**: Service worker para tarefas em background
+- ✅ **public/content.js**: Script de conteúdo para integração com dApps
 - ✅ **popup.html**: Interface popup da extensão
 - ✅ **index.html**: Página principal para desenvolvimento
 
@@ -178,7 +178,7 @@ npm run build
 
 ## 🙏 Conclusão
 
-A estrutura inicial do BAP Connect Wallet foi implementada com sucesso, incluindo todos os componentes, utilitários, estilos, documentação e configurações necessárias. O projeto está pronto para a próxima fase de desenvolvimento, onde os componentes serão conectados à rede BAP real para criar uma carteira digital totalmente funcional e segura.
+A estrutura inicial do PlaySafe foi implementada com sucesso, incluindo todos os componentes, utilitários, estilos, documentação e configurações necessárias. O projeto está pronto para a próxima fase de desenvolvimento, onde os componentes serão conectados à rede BAP real para criar uma carteira digital totalmente funcional, segura e fácil de usar.
 
 ---
 

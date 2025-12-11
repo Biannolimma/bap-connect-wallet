@@ -1,19 +1,19 @@
-# BAP Connect Wallet 🎮💰
+# PlaySafe 🛡️💰
 
-![Block And Play](https://img.shields.io/badge/Block%20And%20Play-NFX-blue)
+![PlaySafe](https://img.shields.io/badge/PlaySafe-BAP%2FNFX-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**BAP Connect Wallet** é uma extensão de carteira digital desenvolvida especificamente para o ecossistema **Block And Play (BAP/NFX)**. Esta carteira permite que usuários gerenciem tokens nativos, realizem transações e interajam com a rede BAP de forma segura, rápida e intuitiva.
+**PlaySafe** é uma extensão de carteira digital segura e fácil de usar, desenvolvida especificamente para o ecossistema **Block And Play (BAP/NFX)**. Esta carteira permite que usuários gerenciem tokens nativos, realizem transações e interajam com a rede BAP de forma segura, rápida e intuitiva, com foco em proteção e simplicidade.
 
 ## 🎯 Visão do Projeto
 
-O BAP Connect Wallet foi criado para ser a ponte entre os usuários e o ecossistema Block And Play, oferecendo:
+O PlaySafe foi criado para ser a ponte segura e confiável entre os usuários e o ecossistema Block And Play, oferecendo:
 
-- **Gestão de Tokens Nativos**: Suporte completo aos tokens BAP e NFX
-- **Interface Intuitiva**: Design moderno e fácil de usar
-- **Segurança**: Implementação de melhores práticas de segurança para carteiras digitais
-- **Multilíngue**: Suporte para múltiplos idiomas (Português, Inglês)
-- **Extensão de Navegador**: Acessível diretamente do seu navegador
+- **Gestão Segura de Tokens**: Suporte completo aos tokens BAP e NFX com proteção avançada
+- **Interface Intuitiva**: Design moderno, limpo e fácil de usar
+- **Segurança em Primeiro Lugar**: Implementação de melhores práticas de segurança para carteiras digitais
+- **Multilíngue**: Suporte completo para Português e Inglês
+- **Extensão de Navegador**: Acessível diretamente do seu navegador de forma conveniente
 
 ## ✨ Recursos Principais
 
@@ -46,6 +46,7 @@ O projeto está estruturado com os seguintes componentes:
 
 ```bash
 # Clone o repositório
+# Nota: O repositório mantém o nome original por compatibilidade
 git clone https://github.com/Biannolimma/bap-connect-wallet.git
 
 # Entre no diretório
@@ -67,12 +68,12 @@ npm run build
 2. Abra o navegador e vá para `chrome://extensions/` (Chrome) ou `about:debugging#/runtime/this-firefox` (Firefox)
 3. Ative o "Modo de desenvolvedor"
 4. Clique em "Carregar extensão sem pacote" e selecione a pasta `dist`
-5. A extensão BAP Connect Wallet estará pronta para uso!
+5. A extensão PlaySafe estará pronta para uso!
 
 ## 📁 Estrutura do Projeto
 
 ```
-bap-connect-wallet/
+playsafe-wallet/
 ├── src/
 │   ├── components/         # Componentes React
 │   │   ├── Receive.jsx
@@ -87,17 +88,20 @@ bap-connect-wallet/
 │   ├── utils/             # Funções utilitárias
 │   └── styles/            # Arquivos de estilo CSS/SCSS
 ├── public/                # Arquivos públicos
-├── manifest.json          # Configuração da extensão
+│   ├── manifest.json      # Configuração da extensão
+│   ├── background.js      # Service worker
+│   └── content.js         # Content script
 ├── package.json           # Dependências do projeto
 └── README.md             # Este arquivo
 ```
 
 ## 🎨 Identidade Visual
 
-### Paleta de Cores
+### Paleta de Cores - PlaySafe
 
-- **Primária**: `#2563eb` (Azul Block And Play)
-- **Secundária**: `#7c3aed` (Roxo NFX)
+- **Primária**: `#2563eb` (Azul Segurança)
+- **Secundária**: `#10b981` (Verde Confiança)
+- **Destaque**: `#7c3aed` (Roxo NFX)
 - **Sucesso**: `#10b981`
 - **Alerta**: `#f59e0b`
 - **Erro**: `#ef4444`
@@ -110,7 +114,7 @@ bap-connect-wallet/
 
 ### Ícones
 
-Utilizar biblioteca de ícones moderna como Heroicons ou Lucide para consistência visual.
+Utilizar biblioteca de ícones moderna como Heroicons ou Lucide para consistência visual, com foco em ícones de segurança e facilidade de uso.
 
 ## 🔄 Fluxo de Telas
 
@@ -149,19 +153,21 @@ Utilizar biblioteca de ícones moderna como Heroicons ou Lucide para consistênc
 
 ### Boas Práticas Implementadas
 
-- Armazenamento seguro de chaves privadas usando criptografia
-- Validação de endereços antes de transações
-- Confirmação dupla para transações de alto valor
-- Timeout automático de sessão
-- Nunca expor chaves privadas no código
+- **Armazenamento Seguro**: Criptografia avançada para chaves privadas
+- **Validação Rigorosa**: Validação de endereços antes de qualquer transação
+- **Confirmação Dupla**: Confirmação adicional para transações de alto valor
+- **Timeout Automático**: Sessão expira automaticamente para maior segurança
+- **Proteção de Dados**: Chaves privadas nunca são expostas no código
+- **Isolamento**: Ambiente isolado para execução segura
 
 ### Recomendações para Evolução
 
 - Implementar autenticação biométrica (quando disponível)
 - Suporte para hardware wallets
-- Backup e recuperação de carteira com seed phrases
-- Detecção de endereços maliciosos
-- Limite de taxa de transações
+- Backup e recuperação de carteira com seed phrases seguras
+- Detecção e bloqueio de endereços maliciosos
+- Limite de taxa de transações para proteção adicional
+- Auditoria de segurança regular
 
 ## 🌍 Internacionalização
 
@@ -226,14 +232,25 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 Para questões, sugestões ou problemas:
 
 - Abra uma issue no GitHub
-- Entre em contato com a equipe Block And Play
+- Entre em contato com a equipe PlaySafe
+- Consulte a documentação completa
+
+## 🔄 Nota sobre o Repositório
+
+Este repositório mantém o nome original `bap-connect-wallet` por questões de compatibilidade. Se desejar renomear o repositório para `playsafe-wallet`, você pode fazer isso nas configurações do GitHub:
+
+1. Vá para Settings > General no GitHub
+2. Em "Repository name", altere para `playsafe-wallet`
+3. Atualize os remotes locais: `git remote set-url origin https://github.com/Biannolimma/playsafe-wallet.git`
+
+**Nota**: Renomear o repositório é opcional e o GitHub redireciona automaticamente o nome antigo.
 
 ## 🙏 Agradecimentos
 
 - Equipe Block And Play pelo suporte e visão do projeto
-- Comunidade NFX por feedback e testes
+- Comunidade BAP/NFX por feedback e testes
 - Todos os contribuidores que ajudaram a tornar este projeto realidade
 
 ---
 
-**Desenvolvido com ❤️ para o ecossistema Block And Play**
+**Desenvolvido com ❤️ e 🛡️ para o ecossistema Block And Play**

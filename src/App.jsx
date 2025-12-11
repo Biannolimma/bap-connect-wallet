@@ -140,7 +140,7 @@ function App() {
       {/* Header */}
       <header className="app-header">
         <div className="header-content">
-          <h1 className="app-title">{i18n?.app?.name || 'BAP Connect Wallet'}</h1>
+          <h1 className="app-title">{i18n?.app?.name || 'PlaySafe'}</h1>
           <LanguageSwitcher
             currentLanguage={language}
             onLanguageChange={handleLanguageChange}

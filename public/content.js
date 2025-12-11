@@ -1,5 +1,5 @@
 /**
- * Content Script for BAP Connect Wallet
+ * Content Script for PlaySafe
  * Injected into web pages to enable dApp interactions
  */
 
@@ -135,4 +135,4 @@ if (document.readyState === 'loading') {
   injectProvider();
 }
 
-console.log('BAP Connect Wallet content script loaded');
+console.log('PlaySafe content script loaded');

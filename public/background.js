@@ -1,11 +1,11 @@
 /**
- * Background Service Worker for BAP Connect Wallet
+ * Background Service Worker for PlaySafe
  * Handles extension background tasks
  */
 
 // Listen for extension installation
 chrome.runtime.onInstalled.addListener((details) => {
-  console.log('BAP Connect Wallet installed:', details.reason);
+  console.log('PlaySafe installed:', details.reason);
   
   if (details.reason === 'install') {
     // First time installation
@@ -100,4 +100,4 @@ async function syncBalances() {
   }
 }
 
-console.log('BAP Connect Wallet background service worker loaded');
+console.log('PlaySafe background service worker loaded');
