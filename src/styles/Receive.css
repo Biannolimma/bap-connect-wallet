@@ -1,0 +1,154 @@
+/* Receive Component Styles */
+.receive-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.receive-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* QR Code Section */
+.qr-code-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.qr-code-placeholder {
+  width: 240px;
+  height: 240px;
+  background: #f3f4f6;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.qr-placeholder-text {
+  font-size: 18px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.qr-instruction {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Address Section */
+.address-section {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.address-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.address-display {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  word-break: break-all;
+}
+
+.address-full {
+  display: block;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #1f2937;
+}
+
+.address-short {
+  display: none;
+}
+
+.copy-button {
+  width: 100%;
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-button:hover {
+  background: #1d4ed8;
+}
+
+.copy-button:active {
+  transform: scale(0.98);
+}
+
+.copy-button.copied {
+  background: #10b981;
+}
+
+/* Warning Section */
+.warning-section {
+  width: 100%;
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.warning-text {
+  font-size: 12px;
+  color: #92400e;
+  margin: 0;
+  text-align: center;
+}
+
+.share-instruction {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .receive-container {
+    padding: 16px;
+  }
+
+  .qr-code-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+
+  .address-full {
+    display: none;
+  }
+
+  .address-short {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #1f2937;
+  }
+}

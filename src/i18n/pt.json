@@ -1,0 +1,117 @@
+{
+  "app": {
+    "name": "BAP Connect Wallet",
+    "welcome": "Bem-vindo à BAP Connect Wallet",
+    "loading": "Carregando..."
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "send": "Enviar",
+    "receive": "Receber",
+    "back": "Voltar",
+    "next": "Próximo",
+    "close": "Fechar",
+    "save": "Salvar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "search": "Pesquisar"
+  },
+  "wallet": {
+    "balance": "Saldo",
+    "totalBalance": "Saldo Total",
+    "availableBalance": "Saldo Disponível",
+    "tokens": "Tokens",
+    "noTokens": "Nenhum token encontrado",
+    "address": "Endereço",
+    "copyAddress": "Copiar Endereço",
+    "shareAddress": "Compartilhar Endereço"
+  },
+  "send": {
+    "title": "Enviar Tokens",
+    "recipientAddress": "Endereço do Destinatário",
+    "recipientPlaceholder": "Digite o endereço do destinatário",
+    "amount": "Quantidade",
+    "amountPlaceholder": "0.00",
+    "selectToken": "Selecionar Token",
+    "available": "Disponível",
+    "networkFee": "Taxa de Rede",
+    "estimatedFee": "Taxa Estimada",
+    "total": "Total",
+    "sendButton": "Enviar",
+    "sending": "Enviando...",
+    "success": "Transação enviada com sucesso!",
+    "error": "Erro ao enviar transação",
+    "invalidAddress": "Endereço inválido",
+    "insufficientBalance": "Saldo insuficiente",
+    "amountTooLow": "Quantidade muito baixa"
+  },
+  "receive": {
+    "title": "Receber Tokens",
+    "yourAddress": "Seu Endereço",
+    "scanQRCode": "Escaneie o QR Code",
+    "shareAddress": "Compartilhe este endereço para receber tokens",
+    "copySuccess": "Endereço copiado para a área de transferência!",
+    "warning": "Envie apenas tokens BAP/NFX para este endereço"
+  },
+  "history": {
+    "title": "Histórico de Transações",
+    "noTransactions": "Nenhuma transação encontrada",
+    "sent": "Enviado",
+    "received": "Recebido",
+    "pending": "Pendente",
+    "confirmed": "Confirmado",
+    "failed": "Falhou",
+    "date": "Data",
+    "amount": "Quantidade",
+    "status": "Status",
+    "transactionHash": "Hash da Transação",
+    "from": "De",
+    "to": "Para",
+    "filterAll": "Todas",
+    "filterSent": "Enviadas",
+    "filterReceived": "Recebidas",
+    "viewOnExplorer": "Ver no Explorer"
+  },
+  "settings": {
+    "title": "Configurações",
+    "language": "Idioma",
+    "currency": "Moeda",
+    "security": "Segurança",
+    "about": "Sobre",
+    "version": "Versão",
+    "network": "Rede",
+    "changePassword": "Alterar Senha",
+    "exportPrivateKey": "Exportar Chave Privada",
+    "backupWallet": "Backup da Carteira",
+    "termsOfService": "Termos de Serviço",
+    "privacyPolicy": "Política de Privacidade"
+  },
+  "language": {
+    "title": "Selecionar Idioma",
+    "portuguese": "Português",
+    "english": "Inglês",
+    "changed": "Idioma alterado com sucesso"
+  },
+  "errors": {
+    "general": "Ocorreu um erro. Tente novamente.",
+    "network": "Erro de conexão com a rede",
+    "timeout": "Tempo limite excedido",
+    "invalidInput": "Entrada inválida",
+    "unauthorized": "Não autorizado",
+    "notFound": "Não encontrado"
+  },
+  "security": {
+    "title": "Segurança",
+    "password": "Senha",
+    "enterPassword": "Digite sua senha",
+    "confirmPassword": "Confirme sua senha",
+    "createPassword": "Criar Senha",
+    "unlockWallet": "Desbloquear Carteira",
+    "locked": "Carteira Bloqueada",
+    "autoLock": "Bloqueio Automático",
+    "biometric": "Autenticação Biométrica"
+  }
+}
