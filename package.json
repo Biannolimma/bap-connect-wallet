@@ -1,7 +1,7 @@
 {
-  "name": "bap-connect-wallet",
+  "name": "playsafe-wallet",
   "version": "0.1.0",
-  "description": "BAP Connect Wallet - Carteira digital para o ecossistema Block And Play (BAP/NFX)",
+  "description": "PlaySafe - Carteira digital segura e fácil de usar para tokens BAP/NFX",
   "main": "src/index.js",
   "scripts": {
     "dev": "vite",
@@ -19,9 +19,11 @@
     "BAP",
     "NFX",
     "browser-extension",
-    "cryptocurrency"
+    "cryptocurrency",
+    "playsafe",
+    "seguranca"
   ],
-  "author": "Block And Play Team",
+  "author": "PlaySafe Team",
   "license": "MIT",
   "repository": {
     "type": "git",

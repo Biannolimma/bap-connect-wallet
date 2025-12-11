@@ -178,7 +178,7 @@ npm run build
 
 ## 🙏 Conclusão
 
-A estrutura inicial do BAP Connect Wallet foi implementada com sucesso, incluindo todos os componentes, utilitários, estilos, documentação e configurações necessárias. O projeto está pronto para a próxima fase de desenvolvimento, onde os componentes serão conectados à rede BAP real para criar uma carteira digital totalmente funcional e segura.
+A estrutura inicial do PlaySafe foi implementada com sucesso, incluindo todos os componentes, utilitários, estilos, documentação e configurações necessárias. O projeto está pronto para a próxima fase de desenvolvimento, onde os componentes serão conectados à rede BAP real para criar uma carteira digital totalmente funcional, segura e fácil de usar.
 
 ---
 

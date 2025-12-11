@@ -1,6 +1,6 @@
 # Assets Directory
 
-This directory contains static assets for the BAP Connect Wallet extension.
+This directory contains static assets for the PlaySafe extension.
 
 ## Required Assets
 
@@ -15,9 +15,10 @@ The extension requires icons in multiple sizes for different contexts:
 ### Recommended Sizes
 - All icons should be PNG format
 - Use transparent backgrounds
-- Follow the BAP brand guidelines
-- Primary color: #2563eb (Blue)
-- Secondary color: #7c3aed (Purple)
+- Follow the PlaySafe brand guidelines focused on security
+- Primary color: #2563eb (Blue Security)
+- Secondary color: #10b981 (Green Trust)
+- Accent color: #7c3aed (Purple NFX)
 
 ### Logo
 - `logo.png` - Full logo with text

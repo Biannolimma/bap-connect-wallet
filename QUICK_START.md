@@ -1,6 +1,6 @@
-# Guia de Início Rápido - BAP Connect Wallet
+# Guia de Início Rápido - PlaySafe
 
-Este guia fornece instruções rápidas para começar a desenvolver o BAP Connect Wallet.
+Este guia fornece instruções rápidas para começar a desenvolver o PlaySafe.
 
 ## 🚀 Início Rápido (5 minutos)
 
@@ -39,7 +39,7 @@ Os arquivos serão gerados na pasta `dist/`
 2. Ative "Modo de desenvolvedor" (canto superior direito)
 3. Clique em "Carregar extensão sem pacote"
 4. Selecione a pasta `dist/` gerada pelo build
-5. A extensão BAP Connect Wallet aparecerá na barra de ferramentas
+5. A extensão PlaySafe aparecerá na barra de ferramentas
 
 ## 📂 Estrutura Rápida
 
@@ -152,4 +152,4 @@ Se encontrar problemas:
 
 **Pronto para começar!** 🚀
 
-Para dúvidas ou sugestões, abra uma issue no GitHub ou entre em contato com a equipe BAP.
+Para dúvidas ou sugestões, abra uma issue no GitHub ou entre em contato com a equipe PlaySafe.
