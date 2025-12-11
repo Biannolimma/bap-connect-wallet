@@ -1,0 +1,117 @@
+{
+  "app": {
+    "name": "BAP Connect Wallet",
+    "welcome": "Welcome to BAP Connect Wallet",
+    "loading": "Loading..."
+  },
+  "common": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "send": "Send",
+    "receive": "Receive",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search"
+  },
+  "wallet": {
+    "balance": "Balance",
+    "totalBalance": "Total Balance",
+    "availableBalance": "Available Balance",
+    "tokens": "Tokens",
+    "noTokens": "No tokens found",
+    "address": "Address",
+    "copyAddress": "Copy Address",
+    "shareAddress": "Share Address"
+  },
+  "send": {
+    "title": "Send Tokens",
+    "recipientAddress": "Recipient Address",
+    "recipientPlaceholder": "Enter recipient address",
+    "amount": "Amount",
+    "amountPlaceholder": "0.00",
+    "selectToken": "Select Token",
+    "available": "Available",
+    "networkFee": "Network Fee",
+    "estimatedFee": "Estimated Fee",
+    "total": "Total",
+    "sendButton": "Send",
+    "sending": "Sending...",
+    "success": "Transaction sent successfully!",
+    "error": "Error sending transaction",
+    "invalidAddress": "Invalid address",
+    "insufficientBalance": "Insufficient balance",
+    "amountTooLow": "Amount too low"
+  },
+  "receive": {
+    "title": "Receive Tokens",
+    "yourAddress": "Your Address",
+    "scanQRCode": "Scan QR Code",
+    "shareAddress": "Share this address to receive tokens",
+    "copySuccess": "Address copied to clipboard!",
+    "warning": "Only send BAP/NFX tokens to this address"
+  },
+  "history": {
+    "title": "Transaction History",
+    "noTransactions": "No transactions found",
+    "sent": "Sent",
+    "received": "Received",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "failed": "Failed",
+    "date": "Date",
+    "amount": "Amount",
+    "status": "Status",
+    "transactionHash": "Transaction Hash",
+    "from": "From",
+    "to": "To",
+    "filterAll": "All",
+    "filterSent": "Sent",
+    "filterReceived": "Received",
+    "viewOnExplorer": "View on Explorer"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "currency": "Currency",
+    "security": "Security",
+    "about": "About",
+    "version": "Version",
+    "network": "Network",
+    "changePassword": "Change Password",
+    "exportPrivateKey": "Export Private Key",
+    "backupWallet": "Backup Wallet",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "language": {
+    "title": "Select Language",
+    "portuguese": "Portuguese",
+    "english": "English",
+    "changed": "Language changed successfully"
+  },
+  "errors": {
+    "general": "An error occurred. Please try again.",
+    "network": "Network connection error",
+    "timeout": "Request timeout",
+    "invalidInput": "Invalid input",
+    "unauthorized": "Unauthorized",
+    "notFound": "Not found"
+  },
+  "security": {
+    "title": "Security",
+    "password": "Password",
+    "enterPassword": "Enter your password",
+    "confirmPassword": "Confirm your password",
+    "createPassword": "Create Password",
+    "unlockWallet": "Unlock Wallet",
+    "locked": "Wallet Locked",
+    "autoLock": "Auto-Lock",
+    "biometric": "Biometric Authentication"
+  }
+}
